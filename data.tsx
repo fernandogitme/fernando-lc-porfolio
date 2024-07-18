@@ -1,30 +1,20 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech } from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Mail, Computer, Book, Rocket, Speech,Github,  BarChart2, Database, BarChart, Activity, Briefcase, Type, DollarSign, Cpu, FileText} from "lucide-react";
 
 export const socialNetworks = [
     {
         id: 1,
-        logo: <Youtube size={30} strokeWidth={1} />,
-        src: "#!",
+        logo: <Github size={35} strokeWidth={1} />,
+        src: "https://github.com/fernandogitme",
     },
     {
         id: 2,
-        logo: <Linkedin size={30} strokeWidth={1} />,
-        src: "#!",
+        logo: <Linkedin size={35} strokeWidth={1} />,
+        src: "https://www.linkedin.com/in/fernando-lucas/",
     },
     {
         id: 3,
-        logo: <Twitter size={30} strokeWidth={1} />,
-        src: "#!",
-    },
-    {
-        id: 4,
-        logo: <Rss size={30} strokeWidth={1} />,
-        src: "#!",
-    },
-    {
-        id: 5,
-        logo: <Twitch size={30} strokeWidth={1} />,
-        src: "#!",
+        logo: <Mail  size={55} strokeWidth={2} />,
+        src: "https://mail.google.com/mail/?view=cm&fs=1&to=fernandolucasprof@gmail.com",
     },
 ];
 
@@ -53,72 +43,67 @@ export const itemsNavbar = [
         title: "Target",
         icon: <CodeSquare size={25} color="#fff" strokeWidth={1} />,
         link: "/portfolio",
-    },
-    {
-        id: 5,
-        title: "Home",
-        icon: <Speech size={25} color="#fff" strokeWidth={1} />,
-        link: "/testimonials",
-    },
+    }
 ];
 
 export const dataAboutPage = [
     {
         id: 1,
-        title: "Frontend Developer",
-        subtitle: "TechSolutions",
-        description: "Colabora con un equipo dinámico para desarrollar interfaces de usuario atractivas y funcionales que impulsen el éxito de nuestros clientes en el mundo digital.",
-        date: "Nov 2023 ",
+        title: "DATA SCIENCE CONSULTANT",
+        subtitle: "Hanbai, Madrid, ES (remoto)",
+        description: "Entrenamiento de un modelo de Deep Learning para mejorar la precisión en la selección de candidatos durante la primera fase del proceso de contratación, junto con el desarrollo de recomendaciones automa zadas basadas en análisis semán co y contextual mediante un modelo de NLP. Se u lizaron técnicas de embeddings y medidas de distancia para analizar y comparar perﬁles de candidatos, logrando una precisión del 77%",
+        date: "JUN. 2024 - JUL. 2024",
     },
     {
         id: 2,
-        title: "Creador de Experiencias Digitales",
-        subtitle: "PixelCrafters",
-        description: "Trabaja en proyectos emocionantes que desafían los límites de la creatividad y la tecnología. Únete a nosotros mientras creamos experiencias digitales cautivadoras que inspiran y cautivan a nuestros usuarios.",
-        date: "May 2021",
+        title: "FINANCE SPECIALIST | FINANCE SPECIALIST MANAGER",
+        subtitle: "Lean Finance, Sevilla, ES (híbrido)",
+        description: "Asesoramiento a CEOs de startups líderes en España en materia de dirección financiera corporativa y financiamiento externo. También lideré un equipo de 5 personas en finanzas, contribuyendo al aumento de ingresos en un 275% y expandiendo el equipo de 4 a más de 20 personas.",
+        date: "MAR. 2021 - DIC. 2023",
     },
     {
         id: 3,
-        title: "Especialista en Desarrollo Frontend",
-        subtitle: "CodeForge Solutions",
-        description: "Como desarrollador frontend, tendrás la oportunidad de colaborar en proyectos diversos y desafiantes que te permitirán expandir tus habilidades y dejar tu huella en el mundo digital.",
-        date: "Ago 2019",
+        title: "M&A advisor | Asistente operaciones",
+        subtitle: "Corporate Finance in Europe, NL (remoto)",
+        description: "En el rol de M&A Advisor, participé en proyectos de fusiones y adquisiciones junto al CEO, analizando empresas para identificar targets adecuados, redactando documentos de venta y compra, manteniendo relaciones con responsables de empresas y compradores, y elaborando modelos financieros. Como Asistente de Operaciones, traduje documentos del inglés al español, gestioné tareas de backoffice en la web e intranet, elaboré hojas de cálculo con información financiera y no financiera, y desarrollé bases de datos de posibles targets para inversores y compradores.",
+        date: "NOV. 2019 - JUN. 2021",
     },
     {
         id: 4,
-        title: "Prácticas Grado",
-        subtitle: "WebWizards Inc.",
-        description: "Únete a nosotros mientras creamos sitios web y aplicaciones interactivas que sorprenden y deleitan a nuestros clientes. Si tienes pasión por el diseño y la programación, y disfrutas colaborar en un entorno creativo, ¡queremos conocerte!        ",
-        date: "Mar 2018",
+        title: "Prácticas administración y compras",
+        subtitle: "Isla Mágica, Sevilla, ES (presencial)",
+        description: "Mis funciones principales incluyeron la gestión de recepciones y compras de existencias a través del ERP NAVISION, el traspaso telemático de mercancía a las diferentes unidades de restauración del parque mediante el mismo software, la comparación de albaranes y facturas con los pedidos previos, y la clasificación de la documentación",
+        date: "MAY. 2019 - SEP. 2019",
     },
 ]
 
 export const dataCounter = [
     {
         id: 0,
-        endCounter: 10,
+        endCounter: 4,
         text: "Años de experiencia",
         lineRight: true,
         lineRightMobile: true,
     },
     {
         id: 1,
-        endCounter: 80,
-        text: "Clientes satisfechos",
+        endCounter: 500,
+        text: "empresas asesoradas en estrategias financieras",
         lineRight: true,
         lineRightMobile: false,
     },
     {
         id: 2,
-        endCounter: 220,
-        text: "Proyectos finalizados",
+        endCounter: 75,
+
+        text: "Porciento de precision en los proyectos finalizados",
         lineRight: true,
         lineRightMobile: true,
     },
     {
         id: 3,
-        endCounter: 30,
-        text: "Premios ganadores",
+        endCounter: 20,
+        text: "librerías de IA utilizadas en proyectos de Python",
         lineRight: false,
         lineRightMobile: false,
     },
@@ -126,132 +111,65 @@ export const dataCounter = [
 
 export const serviceData = [
     {
-        icon: <Crop />,
-        title: "Branding",
-        description: "Desarrollo de una identidad de marca sólida y coherente, incluyendo diseño de logotipo, colores y elementos visuales",
+        icon: <BarChart2 size={60}/>,
+        title: "Python",
+        description: "",
     },
     {
-        icon: <Pencil />,
-        title: "Diseño web",
-        description: "Diseño creativo y profesional de interfaces web intuitivas y atractivas, centradas en la experiencia del usuario",
+        icon: <Database size={60}/>,
+        title: "SQL",
+        description: "",
     },
     {
-        icon: <Computer />,
-        title: "Desarrollo web",
-        description: "Diseño y desarrollo de sitios web a medida, adaptados a tus necesidades",
+        icon: <BarChart size={60}/>,
+        title: "Análisis de Datos",
+        description: "",
     },
     {
-        icon: <Book />,
-        title: "Copywriting",
-        description: "Creación de contenido persuasivo y atractivo que capta la atención de tu audiencia",
+        icon: <Activity size={60}/>,
+        title: "Machine Learning",
+        description: "",
     },
     {
-        icon: <Rocket />,
-        title: "SEO",
-        description: "Optimización de tu presencia en línea mediante estrategias de SEO avanzadas, ",
+        icon: <Briefcase size={60}/>,
+        title: "Analista De Negocios",
+        description: "",
+    },
+    {
+        icon: <Type size={60}/>,
+        title: "Procesamiento de Lenguaje Natural (NLP)",
+        description: "",
+    },
+    {
+        icon: <DollarSign size={60}/>,
+        title: "Asesoramiento financiero",
+        description: "",
+    },
+    {
+        icon: <Cpu size={60}/>,
+        title: "Deep Learning",
+        description: "",
+    },
+    {
+        icon: <FileText size={60}/>,
+        title: "Diseño de Reportes",
+        description: "",
     },
 ];
 
 export const dataPortfolio = [
     {
         id: 1,
-        title: "Web Pro",
-        image: "/image-1.jpg",
+        title: "Sistemas de recomendación a través de Embeddings y NLP en el sector de RRHH",
+        image: "/image-2.png",
         urlGithub: "#!",
-        urlDemo: "#!",
+        urlDemo: "https://www.beautiful.ai/player/-O24zutWNDC7EbLTD679",
     },
     {
         id: 2,
-        title: "Desarrollo Web Ágil",
-        image: "/image-2.jpg",
+        title: "Aplicación de modelos de Machine Learning y Deep Learning en el sector inmobiliario",
+        image: "/image-1.png",
         urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 3,
-        title: "Estrategias Web",
-        image: "/image-3.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 4,
-        title: "Ideas Creativas",
-        image: "/image-4.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 5,
-        title: "Webs Impactantes",
-        image: "/image-5.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 6,
-        title: "Web Dinámica",
-        image: "/image-6.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 7,
-        title: "Dark Web ",
-        image: "/image-7.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 8,
-        title: "E-commerce web",
-        image: "/image-8.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
+        urlDemo: "https://www.beautiful.ai/player/-O25-4gpMbNGqL_FvvCY",
     }
-];
-
-export const dataTestimonials = [
-    {
-        id: 1,
-        name: "George Snow",
-        description:
-            "¡Increíble plataforma! Los testimonios aquí son genuinos y me han ayudado a tomar decisiones informadas. ¡Altamente recomendado!",
-        imageUrl: "/profile1.png",
-    },
-    {
-        id: 2,
-        name: "Juan Pérez",
-        description:
-            "Me encanta la variedad de testimonios disponibles en esta página. Es inspirador ver cómo otras personas han superado desafíos similares a los míos. ¡Gracias por esta invaluable fuente de motivación!",
-        imageUrl: "/profile2.png",
-    },
-    {
-        id: 3,
-        name: "María García",
-        description:
-            "Excelente recurso para obtener opiniones auténticas sobre diferentes productos y servicios. Me ha ayudado mucho en mis compras en línea. ¡Bravo por este sitio!",
-        imageUrl: "/profile3.png",
-    },
-    {
-        id: 4,
-        name: "Laura Snow",
-        description:
-            "¡Qué descubrimiento tan fantástico! Los testimonios aquí son honestos y detallados. Me siento más seguro al tomar decisiones después de leer las experiencias compartidas por otros usuarios.",
-        imageUrl: "/profile4.png",
-    },
-    {
-        id: 5,
-        name: "Carlos Sánchez",
-        description:
-            "Una joya en la web. Los testimonios son fáciles de encontrar y están bien organizados. ¡Definitivamente mi destino número uno cuando necesito referencias confiables!",
-        imageUrl: "/profile5.png",
-    },
-    {
-        id: 6,
-        name: "Antonio Martínez",
-        description:
-            "¡Fantástico recurso para aquellos que buscan validación antes de tomar decisiones importantes! Los testimonios aquí son veraces y realmente útiles. ¡Gracias por simplificar mi proceso de toma de decisiones!",
-        imageUrl: "/profile6.png",
-    },
 ];
