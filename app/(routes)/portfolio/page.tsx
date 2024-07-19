@@ -1,3 +1,6 @@
+"use client"
+
+import { useState, useEffect } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,14 +12,29 @@ import TransitionPage from "@/components/transition-page";
 import ContainerPage from "@/components/container-page";
 import PortfolioBox from "@/components/portfolio-box";
 
-
 const PortfolioPage = () => {
+    const [isWideScreenAvatar, setIsWideScreenAvatar] = useState(false);
+    const [isWideScreenCircle, setIsWideScreenCircle] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsWideScreenAvatar(window.innerWidth >= 1650);
+            setIsWideScreenCircle(window.innerWidth >= 1500);
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize(); // Check the window size when the component mounts
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     return (
         <ContainerPage>
             <TransitionPage />
-            <AvatarPortfolio />
-            <CircleImage />
+            {isWideScreenAvatar && <AvatarPortfolio />}
+            {isWideScreenCircle && <CircleImage />}
             <div className="flex flex-col justify-center h-full">
                 <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">Mis últimos <span className="font-bold text-secondary">proyectos realizados</span></h1>
 

@@ -1,20 +1,39 @@
 import Image from "next/image";
 import { TypeAnimation } from 'react-type-animation';
+import { useState, useEffect } from 'react';
 
 const Introduction = () => {
+    const [isWideScreen, setIsWideScreen] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsWideScreen(window.innerWidth >= 766
+            );
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize(); // Check the window size when the component mounts
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
         <div className="relative z-20 w-full bg-darkBg/60">
-            <div className="grid items-center justify-center h-full p-6 py-20 md:py-0 md:grid-cols-2">
-                <div className="flex justify-center md:justify-start">
-                    <Image 
-                        src="/home-4.png" 
-                        priority 
-                        width="600" 
-                        height="450" 
-                        alt="Avatar"
-                        className="w-full max-w-xs md:max-w-md"
-                    />
-                </div>
+            <div className="grid items-center justify-center h-full p-6 py-20 md:py-0  md:grid-cols-2 ">
+                {isWideScreen && (
+                    <div className="flex justify-center md:justify-start">
+                        <Image 
+                            src="/home-4.png" 
+                            priority 
+                            width="600" 
+                            height="60" 
+                            alt="Avatar"
+                            className="w-full max-w-xs md:max-w-md "
+                        />
+                    </div>
+                )}
                 <div className="flex flex-col justify-center max-w-md">
                     <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Fernando Lucas, <br />
                         <TypeAnimation

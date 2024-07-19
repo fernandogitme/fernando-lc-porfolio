@@ -1,3 +1,6 @@
+"use client"
+
+import { useState, useEffect } from 'react';
 import AvatarServices from "@/components/avatar-services";
 import CircleImage from "@/components/circle-image";
 import SliderServices from "@/components/slider-services";
@@ -5,11 +8,26 @@ import TransitionPage from "@/components/transition-page";
 import ContainerPage from "@/components/container-page";
 
 const ServicesPage = () => {
+    const [isWideScreen, setIsWideScreen] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsWideScreen(window.innerWidth >= 1595);
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize(); // Check the window size when the component mounts
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
         <>
             <TransitionPage />
-            <CircleImage />
-            <AvatarServices />
+            {isWideScreen && <CircleImage />}
+            {isWideScreen && <AvatarServices />}
             <ContainerPage>
                 <div className="grid items-center justify-center h-screen max-w-5xl gap-2 mx-auto md:grid-cols-2">
                     <div className="max-w-[450px]">
