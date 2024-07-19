@@ -23,20 +23,13 @@ const ServicesPage = () => {
         };
     }, []);
 
-    useEffect(() => {
-        document.body.classList.add('no-scroll');
-        return () => {
-            document.body.classList.remove('no-scroll');
-        };
-    }, []);
-
     return (
         <>
             <TransitionPage />
             {isWideScreen && <CircleImage />}
             {isWideScreen && <AvatarServices />}
             <ContainerPageServices>
-                <div className="grid items-center justify-center gap-2 mx-auto max-w-5xl md:grid-cols-2">
+                <div className="grid items-center justify-center  gap-2 mx-auto max-w-5xl md:grid-cols-2">
                     <div className="max-w-[450px]">
                         <h1 className="text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-5">
                             Mis <span className="font-bold text-secondary"> Competencias.</span>

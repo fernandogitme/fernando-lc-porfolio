@@ -30,22 +30,13 @@ const PortfolioPage = () => {
         };
     }, []);
 
-    useEffect(() => {
-        document.body.classList.add('no-scroll');
-        return () => {
-            document.body.classList.remove('no-scroll');
-        };
-    }, []);
-
     return (
         <ContainerPage>
             <TransitionPage />
             {isWideScreenAvatar && <AvatarPortfolio />}
             {isWideScreenCircle && <CircleImage />}
             <div className="flex flex-col justify-center h-full">
-                <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">
-                    Mis últimos <span className="font-bold text-secondary">proyectos realizados</span>
-                </h1>
+                <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">Mis últimos <span className="font-bold text-secondary">proyectos realizados</span></h1>
 
                 <div className="relative z-1 grid max-w-5xl gap-20 mx-auto mt-24 md:grid-cols-2">
                     {dataPortfolio.map((data) => (
