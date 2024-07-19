@@ -33,16 +33,11 @@ const ServicesPage = () => {
     return (
         <>
             <TransitionPage />
+            {isWideScreen && <CircleImage />}
+            {isWideScreen && <AvatarServices />}
             <ContainerPageServices>
-                <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-2 mx-auto max-w-5xl">
-                    {/* SLIDER */}
-                    <div className="order-1 md:order-2">
-                        <SliderServices />
-                    </div>
-
-                    <div className="order-2 md:order-1 max-w-[450px]">
-                        {isWideScreen && <CircleImage />}
-                        {isWideScreen && <AvatarServices />}
+                <div className="grid items-center justify-center gap-2 mx-auto max-w-5xl md:grid-cols-2">
+                    <div className="max-w-[450px]">
                         <h1 className="text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-5">
                             Mis <span className="font-bold text-secondary"> Competencias.</span>
                         </h1>
@@ -56,6 +51,11 @@ const ServicesPage = () => {
                                 </button>
                             </a>
                         </div>
+                    </div>
+
+                    {/* SLIDER */}
+                    <div>
+                        <SliderServices />
                     </div>
                 </div>
             </ContainerPageServices>
