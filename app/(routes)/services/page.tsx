@@ -12,7 +12,7 @@ const ServicesPage = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsWideScreen(window.innerWidth >= 1595);
+            setIsWideScreen(window.innerWidth >= 1655);
         };
 
         window.addEventListener('resize', handleResize);
