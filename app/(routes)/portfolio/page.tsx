@@ -32,6 +32,11 @@ const PortfolioPage = () => {
 
     return (
         <ContainerPage>
+            <style jsx global>{`
+                body {
+                    overflow-x: hidden;
+                }
+            `}</style>                
             <TransitionPage />
             {isWideScreenAvatar && <AvatarPortfolio />}
             {isWideScreenCircle && <CircleImage />}
