@@ -5,17 +5,17 @@ import { Code, Brain, GitBranch, Cloud, Globe, Sparkles, LineChart, PieChart, Bo
 export const socialNetworks = [
     {
         id: 1,
-        logo: <Github size={35} strokeWidth={1} />,
+        logo: <Github size={40} strokeWidth={1} />,
         src: "https://github.com/fernandogitme",
     },
     {
         id: 2,
-        logo: <Linkedin size={35} strokeWidth={1} />,
+        logo: <Linkedin size={40} strokeWidth={1} />,
         src: "https://www.linkedin.com/in/fernando-lucas/",
     },
     {
         id: 3,
-        logo: <Mail  size={55} strokeWidth={2} />,
+        logo: <Mail  size={40} strokeWidth={1} />,
         src: "https://mail.google.com/mail/?view=cm&fs=1&to=fernandolucasprof@gmail.com",
     },
 ];

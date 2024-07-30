@@ -21,7 +21,9 @@ const Header = () => {
                                 key={id}
                                 href={src}
                                 target="_blank"
-                                className="transition-all duration-300 hover:text-secondary"
+                                className={`transition-all duration-300 hover:text-secondary ${
+                                    id === 3 ? 'p-3 rounded-full bg-gray-600 ' : ''
+                                }`}
                             >
                                 {logo}
                             </Link>
